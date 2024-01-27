@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Handjet:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="cuerpo">
+    <header id="header">
+        <nav>
+            <img class="Logo" src="/img/Logo.jpg" width="102" alt="Logo Tienda">
+            <a class="link" href="/index.html">INICIO</a>
+            <a class="link" href="/pages/quienes_somos.html">QUIÉNES SOMOS</a>
+            <a class="link" href="/pages/medio_ambiente.html">MEDIO AMBIENTE</a>
+            <a class="link" href="/pages/tienda.html">TIENDA</a>
+            <a class="link" href="/pages/contacto.html">CONTACTO</a>
+            <a class="link" href="/pages/formulario.html">LOG IN</a>
+            <input placeholder="BARRA DE BÚSQUEDA" class="barrabusqueda" name="text" type="text">
+            <img class="Logo" src="/img/Logo.jpg" width="102" alt="Logo Tienda" align="right">
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p id="textodelogin">- REGÍSTRATE EN GAME GALAXY -</p>
+        </div>
+        <section id="formsection">
+            <div class="formulario-container">
+                <p id="textoderegistro">FORMULARIO DE REGISTRO</p>
+        
+                <form action="/php/submit.php" method="post">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" id="nombre" name="nombre" required>
+        
+                    <label for="apellido">APELLIDO</label>
+                    <input type="text" id="apellido" name="apellido" required>
+        
+                    <label for="correo">CORREO ELECTRÓNICO</label>
+                    <input type="email" id="correo" name="correo" required>
+                    
+                    <label for="password">CONTRASEÑA</label>
+                    <input type="password" id="password" name="password" required>
+                    
+                    <label for="confirmarPassword">CONFIRMAR CONTRASEÑA</label>
+                    <input type="password" id="confirmarPassword" name="confirmarPassword" required>
+        
+                    <label for="telefono">TELÉFONO</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+        
+                    <div id="botonenviardiv">
+                        <button class="button" id="botonenviar" type="submit">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">ENVIAR</span>
+                            </span>
+                        </button>
+                    </div>
+                    
+                </form>
+                <script>
+                    function validarFormulario() {
+                        var password = document.getElementById("password").value;
+                        var confirmarPassword = document.getElementById("confirmarPassword").value;
+            
+                        if (password !== confirmarPassword) {
+                            alert("Las contraseñas no coinciden. Por favor, vuelve a intentarlo.");
+                            return false; 
+                        }
+            
+                        return true; 
+                    }
+                </script>
+                <div id="botonyaestoy">
+                    <a id="yaestoyregistrado" href="/pages/iniciosesion.html">
+                        <button class="button">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span id="textoyaestoyboton"  class="button_text">YA ESTOY REGISTRADO</span>
+                            </span>
+                        </button>
+                    </a> 
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

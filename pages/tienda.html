@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda GG</title>
+    <link rel="stylesheet" href="/css/estilostienda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Handjet:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body class="cuerpo">
+    <main>
+        <header id="header">
+            <nav>
+                <img class="Logo" src="/img/Logo.jpg" width="102" alt="Logo Tienda">
+                <a class="link" href="/index.html">INICIO</a>
+                <a class="link" href="/pages/quienes_somos.html">QUIÉNES SOMOS</a>
+                <a class="link" href="/pages/medio_ambiente.html">MEDIO AMBIENTE</a>
+                <a class="link" href="/pages/tienda.html">TIENDA</a>
+                <a class="link" href="/pages/contacto.html">CONTACTO</a>
+                <a class="link" href="/pages/formulario.html">LOG IN</a>
+                <input placeholder="BARRA DE BÚSQUEDA" class="barrabusqueda" name="text" type="text"> <!-- Barra de búsqueda dentro de la barra <nav>-->
+                <div class="contenedoricono">
+                    <div class="contenedoriconocarrito">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="iconcart">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                        <div class="contarproductos">
+                            <span id="contadordeproductos">0</span>
+                        </div>
+                    </div>
+
+                    <div class="contenedorcarritoproductos carritoescondido">
+                        <div class="rowproducto">
+                            <div class="carritoproducto">
+                                
+                                <div class="infoproductoscarrito">
+                                    <span class="cantidadproductoencarro"></span>
+                                    <p class="nombreproductocarrito"></p>
+                                    <span class="precioproductocarrito"></span>
+                                </div>
+                               
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="cerrarcarrito">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                                  
+                            </div>
+                        </div>
+                        <div class="totalcarrito">
+                            <h3>Total :</h3>
+                            <span class="totalpagar">$0</span>
+                        </div>
+                    </div>
+                      
+                </div>
+            </nav>
+        </header>
+        <div>
+            <p id="titulotienda">-- GAME GALAXY --</p>
+        </div>
+        <div class="containeritems">
+            <div class="item">
+                <a href="https://estore.asus.com/es/90nv0gy1-m002y0-rog-ally-2023.html"><img class="imgproducto" src="/img/asus.jpg" alt="Asus Rog Ally"></a> 
+                <div class="infoproducto">
+                    <h2>Asus Rog Ally</h2>
+                    <p class="precio">$499</p>
+                    <p class="preciotachado">$699</p>
+                    <p class="descuento">28,6% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.playstation.com/es-es/ps5/"><img class="imgproducto" src="/img/PS5.png" alt="Play Station 5"></a> 
+                <div class="infoproducto">
+                    <h2>Play Station 5</h2>
+                    <p class="precio">$409.99</p>
+                    <p class="preciotachado">$549</p>
+                    <p class="descuento">25,3% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.xbox.com/es-ES/consoles/xbox-series-x"><img class="imgproducto" src="/img/xbox.jpg" alt="X-Box Series X"></a>
+                <div class="infoproducto">
+                    <h2>X-Box Series X</h2>
+                    <p class="precio">$429.99</p>
+                    <p class="preciotachado">$499.99</p>
+                    <p class="descuento">14% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.nintendo.es/Hardware/Familia-Nintendo-Switch/Nintendo-Switch/Nintendo-Switch-1148779.html"><img class="imgproducto" src="/img/nintendo.jpg" alt="Nintendo Switch"></a>
+                <div class="infoproducto">
+                    <h2>Nintendo Switch</h2>
+                    <p class="precio">$199.99</p>
+                    <p class="preciotachado">$299.99</p>
+                    <p class="descuento">33,3% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.amazon.es/VALVE-pulgadas-SteamOS-consola-juegos/dp/B0BCQLYDFY"><img class="imgproducto" src="/img/steamdeck.jpg" alt="Steam Deck"></a>
+                <div class="infoproducto">
+                    <h2>Steam Deck</h2>
+                    <p class="precio">$299.99</p>
+                    <p class="preciotachado">$569.99</p>
+                    <p class="descuento">47,3% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="item">
+                <a href="https://www.razer.com/es-es/gaming-keyboards/razer-blackwidow-v3"><img class="imgproducto" src="/img/teclado.jpg" alt="Razer BlackWidow V3"></a>
+                <div class="infoproducto">
+                    <h2>Razer BlackWidow</h2>
+                    <p class="precio">$69.99</p>
+                    <p class="preciotachado">$119.99</p>
+                    <p class="descuento">41,6% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.logitechg.com/es-es/products/gaming-mice/pro-wireless-mouse.910-005273.html"><img class="imgproducto" src="/img/raton.jpg" height="200px" alt="Logitech Serie Pro"></a>
+                <div class="infoproducto">
+                    <h2>Logitech Pro</h2>
+                    <p class="precio">$89.99</p>
+                    <p class="preciotachado">$145.99</p>
+                    <p class="descuento">37,9% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.samsung.com/es/monitors/gaming/odyssey-g9-49-inch-240hz-1ms-curved-lc49g95tssrxen/"><img class="imgproducto" src="/img/monitor.jpg" alt="Samsung Odissey G9"></a>
+                <div class="infoproducto">
+                    <h2>Samsung Odissey G9</h2>
+                    <p class="precio">$399.99</p>
+                    <p class="preciotachado">$1098</p>
+                    <p class="descuento">63,5% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.razer.com/es-es/gaming-headsets/razer-barracuda-x"><img class="imgproducto" id="cascos" src="/img/cascos.jpg"  alt="Razer Barracuda X"></a>
+                <div class="infoproducto">
+                    <h2>Razer Barracuda X</h2>
+                    <p class="precio">$29.99</p>
+                    <p class="preciotachado">$67.01</p>
+                    <p class="descuento">55,5% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.pccomponentes.com/thrustmaster-t80-rw-ferrari-488-gtb-pc-ps4-ps5"><img class="imgproducto" src="/img/volante.jpg" alt="Thrustmaster T-80"></a>
+                <div class="infoproducto">
+                    <h2>Thrustmaster T-80</h2>
+                    <p class="precio">$99.99</p>
+                    <p class="preciotachado">$117.99</p>
+                    <p class="descuento">15,3% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="item">
+                <a href="https://www.blasphemous2game.com/"><img class="imgproducto" src="/img/blasphemous.jpg" alt="Blasphemous 2"></a>
+                <div class="infoproducto">
+                    <h2>Blasphemous II</h2>
+                    <p class="precio">$14.99</p>
+                    <p class="preciotachado">$34.99</p>
+                    <p class="descuento">58,2% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.nintendo.es/Juegos/Juegos-de-Nintendo-Switch/The-Legend-of-Zelda-Tears-of-the-Kingdom-1576884.html"><img class="imgproducto" src="/img/zelda.jpg" alt="Zelda Tears Of The Kingdom"></a>
+                <div class="infoproducto">
+                    <h2>Zelda Tears Of The Kingdom</h2>
+                    <p class="precio">$39.99</p>
+                    <p class="preciotachado">$60</p>
+                    <p class="descuento">33,3% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://baldursgate3.game/"><img class="imgproducto" src="/img/baldurs.jpg" alt="Baldur´s Gate 3"></a>
+                <div class="infoproducto">
+                    <h2>Baldur´s Gate III (GOTY)</h2>
+                    <p class="precio">$29.99</p>
+                    <p class="preciotachado">$59.99</p>
+                    <p class="descuento">50% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://www.hollowknight.com/"><img class="imgproducto" src="/img/hollow.jpg" alt="Hollow Knight"></a>
+                <div class="infoproducto">
+                    <h2>Hollow Knight</h2>
+                    <p class="precio">$9.99</p>
+                    <p class="preciotachado">14.99</p>
+                    <p class="descuento">33% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="https://octopathtraveler2.square-enix-games.com/es/"><img class="imgproducto" src="/img/octo.png" alt="Octopath Traveller"></a>
+                <div class="infoproducto">
+                    <h2>Octopath Traveller</h2>
+                    <p class="precio">39.99</p>
+                    <p class="preciotachado">$49.99</p>
+                    <p class="descuento">20% dto</p>
+                    <div class="divboton">
+                        <button class="button botontienda">
+                            <span class="button_lg">
+                                <span class="button_sl"></span>
+                                <span class="button_text">Añadir al Carrito</span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="/js/tienda.js"></script>
+</body>
+</html>

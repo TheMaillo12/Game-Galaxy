@@ -1,0 +1,775 @@
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  background-color: #0b071b;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+p{
+  font-family: 'Handjet', sans-serif;
+
+}
+nav{
+    height: 6.4em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/fotos-premium/videojuego-fondo-abstracto-esports-scifi-gaming-cyberpunk-vr-simulacion-realidad-virtual-escenario-metaverso-stand-pedestal-etapa-3d-ilustracion-renderizado-futurista-neon-glow-room_42100-4107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    top: 0px;
+    flex-shrink: 1;
+}
+header{
+    top: 0px;
+    z-index: 20;
+}
+h2{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 168, 112);
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  font-style: oblique;
+}
+.Logo{
+    border-radius: 25px;
+    margin: 0px;
+    top: -12px;
+    width: 104px;
+    
+}
+.link{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -48px; 
+    text-decoration: none;
+    padding: 20px 22px;
+    color: rgb(3, 184, 124);
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    transition: 0.3s;
+}
+.link:hover{
+    background-color: rgba(137, 52, 96, 0.929);
+    transform: scale(1.1);
+}
+.barrabusqueda{
+    color: rgb(0, 168, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    position: relative;
+    top: -47px;
+    width: 400px; 
+    height: 30px; 
+    border: 2px solid transparent; 
+    outline: none; 
+    caret-color: rgb(0, 0, 0); 
+    background-color: #000000; 
+    padding: 10px; 
+    transition: 0.2s linear; 
+    font-family: monospace; 
+    letter-spacing: 1px; 
+    margin: 20px;
+}
+.barrabusqueda:hover{
+    background-color: rgb(39, 40, 41);
+    transform: scale(1.08);
+}
+
+.contenedor{
+    height: 35em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo0.jpg);
+    background-size: cover;
+    background-position-y: 65%;
+    border-radius: 25px;
+    
+}
+#titulodiv{
+    position: relative;
+    top: 30px;
+}
+#titulo1{
+    position: relative;
+    margin-top: 40px;
+    color: rgb(0, 168, 112);
+    font-family: 'Handjet', sans-serif;
+    font-style: oblique;
+    font-size: 70px;
+    font-weight: 600;
+}
+#pdiv{
+    font-family: 'Handjet', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    margin-top: 50px;
+    color: rgb(136, 228, 197);
+    font-weight: 600;
+}
+.linkcentrado{
+    justify-content: center;
+    display: flex;
+}
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+    z-index: 18;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .30s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: rgb(3, 184, 124);
+    background-color: #111d29;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: rgba(137, 52, 96, 0.929);
+    transform: skew(-20deg);
+    transition: all .4s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: rgba(213, 213, 213, 0.929);
+  }
+
+#compraahora{
+    justify-content: center;
+    display: flex;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 40px;
+}
+#logocentro{
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+.imgredonda{
+    border-radius: 50%;
+    border: 4px solid rgba(216, 51, 126, 0.714);
+    transition: 0.3s;
+    object-fit: cover;
+    
+}
+.imgredonda:hover{
+    transform: scale(1.1);
+}
+#barrajuegos{
+   height: 32em;
+   justify-content: center;
+   display: flex;  
+   margin: 0 auto;   
+   width: 1400px;
+   height: 500px;
+   position: relative;
+   margin-bottom: 120px;
+}
+.imgbarra{
+    justify-content: center;
+    display: flex;
+    width: 175px;
+    height: 420px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s ease;
+    
+}
+.imgbarra:hover{
+    cursor: auto;
+    width: 260px ;
+    opacity: 1;
+    filter: contrast(120%);
+}
+#seccion1{
+    height: 32em;
+    display: flex;
+    justify-content: center;
+    padding: 120px ;
+    background-color: #06051c;
+    position: relative;
+    text-align: center;
+    
+}
+#seccion2{
+  height: 32em;
+  display: flex;
+  justify-content: center;
+  padding: 120px ;
+  background-color: #06051c;
+  position: relative;
+  text-align: center;
+  
+}
+#seccion3{
+  height: 32em;
+  display: flex;
+  justify-content: center;
+  padding: 120px ;
+  background-color: #06051c;
+  position: relative;
+  text-align: center;
+  
+}
+.h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    font-size: large;
+    margin: 40px;
+    color: rgb(0, 168, 112);
+    text-align: center;
+}
+.particle{
+    font-style: oblique;
+    font-size: x-large;
+    font-weight: 700;
+    color: rgb(0, 168, 112);
+}
+#imgjuegos{
+    margin-right: 320px;
+}
+#imgperifericos{
+    margin-left: 320px;
+}
+#imgblasphemous{
+  position: relative;
+  margin-right: 320px;
+}
+#imgbaldurs{
+  position: relative;
+  
+}
+#imgzelda{
+  position: relative;
+  margin-left: 320px;
+}
+#imgsteam{
+  margin-right: 300px;
+}
+#imgmeta{
+  position: relative;
+}
+#imgvandal{
+  position: relative;
+  margin-left: 300px;
+}
+
+#bjuegos{
+    margin-left: -320px;
+}
+#bconsolas{
+    margin-left: 10px;
+}
+#bperifericos{
+    margin-left: 320px;
+}
+#bzelda{
+    margin-left: 320px;
+}
+#bbaldurs{
+  left: 10px;
+}
+#bvandal{
+  margin-left: 300px;
+}
+#bsteam{
+  margin-left: -290px;
+}
+
+.divboton{
+    margin-top: 40px;
+    position: relative;
+    justify-content: center;
+}
+#texto1{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: -160px;
+}
+#texto2{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+}
+#texto3{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: 150px;
+}
+#texto4{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: -160px;
+}
+#texto5{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: -0px;
+}
+#texto6{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: 160px;
+
+}
+#texto7{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  left: -150px;
+}
+#texto8{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+}
+#texto9{
+  margin-top: 40px;
+  position: relative;
+  justify-content: center;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  margin-left: 290px;
+}
+
+
+#seccion1{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: bottom;
+  justify-content: center;
+  position: relative;
+}
+
+#seccion2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 50%;
+  justify-content: center;
+  position: relative;
+}
+#seccion3{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  justify-content: center;
+  position: relative;
+}
+#textobarrajuegos{
+  position: relative;
+  margin-bottom: 80px;
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  color: rgb(3, 184, 124);
+  font-weight: 700;
+}
+.linkf{
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; 
+  text-decoration: none;
+  padding: 10px 10px;
+  color: rgb(3, 184, 124);
+  margin: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  transition: 0.3s;
+
+}
+.linkf:hover{
+  background-color: rgba(137, 52, 96, 0.929);
+  border-radius: 12px;
+  transform: scale(1.1);
+}
+
+#divfooterlogos{
+  height: 3em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.imgfooter{
+  height: 3em;
+  width: 3.5em;
+  padding: 0px 30px;
+}
+#footer{
+  height: 50em;
+  justify-content: center;
+  text-align: center;
+  background-color: #242338;
+  position: relative;
+}
+#logofooter{
+  width: 350px;
+  position: relative;
+  justify-content: center;
+  bottom: 300px;
+  border-radius: 50%;
+  left: 120px;
+  top: 0px;
+}
+#mapa{
+  position: relative;
+  border-radius: 12px;
+  left: 490px;
+}
+#pfooter{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  justify-content: center;
+  color: rgb(3, 184, 124);
+  font-weight: 500;
+  font-size: large;
+  top: 420px;
+  left: 830px;
+  height: 50px;
+
+}
+#divfooter1{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 50px;
+
+  
+}
+#divfooter2{
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 180px;
+  top: 200px;
+}
+#divfooter3{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+  left: 1200px;
+  bottom: 200px;
+}
+
+#avatarfooter{
+  width: 250px;
+  position: relative;
+  top: 0px;
+  left: 420px;
+}
+#pcreador{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 168, 112);
+  font-family: 'Handjet', sans-serif;
+  font-size: xx-large;
+  font-weight: 700;
+  height: 80px;
+  width: 120px;
+  top: 260px;
+  left: 660px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#formsection{
+  height: 58em;
+  margin-top: 3em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#textodelogin{
+  position: relative;
+  margin-top: 40px;
+  color: rgb(0, 168, 112);
+  font-family: 'Handjet', sans-serif;
+  font-style: oblique;
+  font-size: 50px;
+  font-weight: 600;
+  text-align: center;
+}
+.formulario-container {
+  background-color: #3e166a;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  
+}
+label {
+  display: block;
+  margin-bottom: 20px;
+  color: rgb(0, 168, 112);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #000000;
+  font-size: 20px;
+}
+.buttonlogin {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  justify-content: center;
+  margin-top: 40px;
+  display: flex;
+}
+
+.buttonlogin:hover {
+  background-color: #45a049;
+}
+
+#textoderegistro{
+  position: relative;
+  margin-top: 20px;
+  bottom: 20px;
+  color: rgb(0, 168, 112);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+#botonenviar{
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+
+}
+#botonenviardiv{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#textoyaestoy{
+  position: relative;
+  
+  bottom: 20px;
+  color: rgb(0, 168, 112);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+#textoyaestoy-container{
+  position: relative;
+  top: 120px;
+  justify-content: center;
+}
+#formsection2{
+  height: 30em;
+  margin-top: 3em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#textodeLOGIN{
+  position: relative;
+  margin-top: 20px;
+  bottom: 20px;
+  color: rgb(0, 168, 112);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
+#textoyaestoyboton{
+  color: rgb(232, 170, 56);
+}
+#botonyaestoy{
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+
+}
+#botonenviar2{
+  position: relative;
+  justify-content: center;
+  cursor: pointer;
+
+}
+#botonenviardiv2{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}

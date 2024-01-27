@@ -1,0 +1,627 @@
+html{
+  height: 100%;
+}
+
+p{
+    font-family: 'Handjet', sans-serif;
+    font-style: oblique;
+    font-size: x-large;
+    color: rgb(136, 228, 197);
+    font-weight: 600;
+}
+nav{
+    height: 6.4em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/fotos-premium/videojuego-fondo-abstracto-esports-scifi-gaming-cyberpunk-vr-simulacion-realidad-virtual-escenario-metaverso-stand-pedestal-etapa-3d-ilustracion-renderizado-futurista-neon-glow-room_42100-4107.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    top: 0px;
+    flex-shrink: 1;
+}
+header{
+    top: 0px;
+    z-index: 20;
+}
+h2{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 168, 112);
+  font-family: 'Handjet', sans-serif;
+  font-size: 40px;
+  font-style: oblique;
+}
+h1{
+    position: relative;
+    color: rgb(0, 168, 112);
+    font-family: 'Handjet', sans-serif;
+    font-style: oblique;
+    font-size: 70px;
+    font-weight: 600;
+}
+#titulootras{
+    position: relative;
+    justify-content: center;
+    bottom: 150px;
+
+}
+.Logo{
+    border-radius: 25px;
+    margin: 0px;
+    top: -12px;
+    width: 104px;
+    
+}
+#intro{
+    position: relative;
+    justify-content: center;
+    bottom: 10px;
+}
+#seccionp{
+    height: 20em;
+    justify-content: center;
+    padding: 120px ;
+    background-color: rgb(18, 16, 56);
+    position: relative;
+}
+.link{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 45px; 
+    text-decoration: none;
+    padding: 20px 22px;
+    color: rgb(3, 184, 124);
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    transition: background-color 0.3s;
+    transition: 0.3s;
+}
+.link:hover{
+    background-color: rgba(137, 52, 96, 0.929);
+    transform: scale(1.1);
+}
+.barrabusqueda{
+    color: rgb(0, 168, 112);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 25px;
+    position: relative;
+    bottom: 43px;
+    width: 400px; 
+    height: 30px; 
+    border: 2px solid transparent; 
+    outline: none; 
+    caret-color: rgb(0, 0, 0); 
+    background-color: #000000; 
+    padding: 10px; 
+    transition: 0.2s linear; 
+    font-family: monospace; 
+    letter-spacing: 1px; 
+    margin: 20px;
+}
+.barrabusqueda:hover{
+    background-color: rgb(39, 40, 41);
+    transform: scale(1.08);
+}
+.cuerpo{
+    margin: 0;
+    background-color: #0b071b;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    
+    
+}
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #000000;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
+  z-index: 18;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1px solid #7D8082;
+  transition: all .30s ease;
+}
+
+.button::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.button::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.button:active,
+.button:focus {
+  outline: none;
+}
+
+.button:active::before,
+.button:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.button:active::before {
+  top: 3px;
+}
+
+.button:active::after {
+  bottom: 3px;
+}
+
+.button_lg {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  color: rgb(3, 184, 124);
+  background-color: #111d29;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.button_lg::before {
+  content: '';
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
+}
+
+.button_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
+}
+
+.button_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: rgba(137, 52, 96, 0.929);
+  transform: skew(-20deg);
+  transition: all .4s ease;
+}
+
+.button_text {
+  position: relative;
+}
+
+.button:hover {
+  color: #0f1923;
+}
+
+.button:hover .button_sl {
+  width: calc(100% + 15px);
+}
+
+.button:hover .button_lg::after {
+  background-color: rgba(213, 213, 213, 0.929);
+}
+
+#compraahora{
+    justify-content: center;
+    display: flex;
+    font-style: normal;
+    text-decoration: none;
+    margin-top: 40px;
+}
+#logocentro{
+    justify-content: center;
+    display: flex;
+    margin-top: 80px;
+}
+.imgredonda{
+    border-radius: 50%;
+    transition: 0.3s;
+    object-fit: cover;
+    border: 3px solid rgba(137, 52, 96, 0.929) ;
+    
+}
+.imgredonda:hover{
+    transform: scale(1.1);
+}
+#footer{
+  height: 24em;
+  justify-content: center;
+  padding: 120px ;
+  background-color: #242338;
+  position: relative;
+  text-align: center;
+}
+#logofooter{
+  width: 250px;
+  position: relative;
+  justify-content: center;
+  text-align: center ;
+  bottom: 300px;
+  border-radius: 50%;
+}
+.linkf{
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative; 
+  text-decoration: none;
+  padding: 10px 10px;
+  color: rgb(3, 184, 124);
+  margin: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  transition: background-color 0.3s;
+  transition: 0.3s;
+
+}
+.linkf:hover{
+  background-color: rgba(137, 52, 96, 0.929);
+  border-radius: 12px;
+  transform: scale(1.1);
+}
+#divfizq{
+  position: relative;
+
+}
+#divfooterlogos{
+  height: 3em;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+.imgfooter{
+  height: 3em;
+  width: 3.5em;
+  padding: 0px 30px;
+}
+#divfooterd{
+  justify-content: center;
+  position: relative;
+}
+#mapa{
+  position: relative;
+  justify-content: center;
+  bottom: 400px;
+  border-radius: 12px;
+}
+#pfooter{
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  justify-content: center;
+  color: rgb(3, 184, 124);
+  bottom: 250px;
+  font-weight: 500;
+  font-size: larger;
+  right: 10px;
+}
+#imgcentro{
+  position: relative;
+  justify-content: center;
+  bottom: 100px;
+}
+#quienes_somos{
+  font-size: 50px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+#seccion1quienes{
+  height: 45em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo1.jpg);
+  background-position-y: 50%;
+  background-size: cover;
+  justify-content: center;
+  
+  
+}
+#textoquienessomos{
+  text-align: center;
+  position: relative;
+  top: 130px;
+  font-size: 35px;
+  color: rgb(3, 184, 124);
+  font-weight: bolder;
+  
+}
+#botoninicio{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 200px;
+}
+#seccion1medioambiente{
+  height: 100em;
+  background-color: rgb(27, 16, 46);
+  text-align: center;
+}
+#textomedioambiente{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  color: rgb(3, 184, 124);
+  font-weight: bolder;
+}
+#medioambiente{
+  font-size: 50px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+#botoniniciomedioambiente{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 100px;
+}
+#contacto{
+  font-size: 50px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+#textocontacto{
+  text-align: center;
+  position: relative;
+  top: 50px;
+  font-size: 30px;
+  color: rgb(3, 184, 124);
+  font-weight: bolder;
+}
+#seccion1contacto{
+  height: 55em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo4.jpg);
+  background-position-y: 70%;
+  background-size: cover;
+  justify-content: center;
+}
+.correolink{
+  text-decoration: none;
+  color: rgb(3, 184, 124);
+}
+#botoniniciocontacto{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  top: 80px;
+}
+#seccion2contacto{
+  height: 35em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo1.jpg);
+  background-size: cover;
+  background-position-y: 30%;
+  justify-content: space-between;
+  display: flex;
+}
+#textoentresecciones{
+  height: 5em;
+  text-align: center;
+  justify-content: center;
+
+}
+#nuestrasredes{
+  font-size: 40px;
+}
+
+#linkainstaimg{
+  width: 250px;
+}
+
+#linkatiktokimg{
+  width: 250px;
+}
+
+#linkaximg{
+  width: 250px;
+}
+.textoderedes{
+  font-size: 40px;
+  color: rgb(3, 184, 124);
+}
+
+.articuloredes{
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 120px 0px;
+  margin: 0 10px;
+  display: inline-block;
+}
+#cookies{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bolder;
+}
+#seccion1cookies{
+  height: 80em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo4.jpg);
+  background-position-y: 70%;
+  background-size: cover;
+  justify-content: center;
+}
+#textocookies{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: rgb(3, 184, 124);
+  
+}
+#botoniniciocookies{
+  text-align: center;
+  top: 30px;
+  position: relative;
+}
+#seccion1colaboradores{
+  height: 20em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo0.jpg);
+  background-size: cover;
+  background-position-y: 25%;
+  
+}
+#textocolaboradores{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  color: rgb(3, 184, 124);
+  position: relative;
+  top: 30px;
+}
+#botoniniciocolaboradores{
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+
+#textoentrecolaboradores{
+  height: 5em;
+  text-align: center;
+  justify-content: center;
+
+}
+#nuestrasredes{
+  font-size: 40px;
+}
+
+#linkaeneba{
+  width: 250px;
+  height: 250px;
+}
+
+#linkainstantgaming{
+  width: 250px;
+  height: 250px;
+}
+
+#linkasteam{
+  width: 250px;
+  height: 250px;
+}
+
+.articulocolabo{
+  box-sizing: border-box;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  padding: 120px 0px;
+  margin: 0 10px;
+  display: inline-block;
+}
+#confiamosen{
+  font-size: 50px;
+}
+#seccion2colaboradores{
+  height: 35em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/img/fondo1.jpg);
+  background-size: cover;
+  background-position-y: 30%;
+  justify-content: space-between;
+  display: flex;
+}
+#instantimg{
+  width: 250px;
+  height: 250px;
+}
+#enebaimg{
+  width: 250px;
+  height: 250px;
+}
+#steamimg{
+  width: 250px;
+  height: 250px;
+}
+#seccion1devoluciones{
+  height: 88em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo2.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  
+}
+#textodevoluciones{
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: rgb(3, 184, 124);
+  position: relative;
+  top: 30px;
+}
+#devoluciones{
+  text-align: center;
+  font-size: 50px;
+}
+#botoniniciodevoluciones{
+  text-align: center;
+  position: relative;
+  top: 15px;
+}
+#seccion1politica{
+  height: 84em;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/img/fondo4.jpg);
+  background-size: cover;
+  background-position-y: 80%;
+  
+}
+#textopolitica{
+  text-align: center;
+  font-size: 22px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: rgb(3, 184, 124);
+  position: relative;
+  top: 30px;
+}
+#politica{
+  text-align: center;
+  font-size: 50px;
+}
+#botoniniciopolitica{
+  text-align: center;
+  position: relative;
+  top: 40px;
+}
